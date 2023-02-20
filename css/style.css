@@ -1,0 +1,28 @@
+* {
+    font-family: "Cairo", sans-serif;
+}
+header {
+    min-height: 50px;
+}
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header img {
+    width: 150px;
+}
+.landing {
+    min-height: 100vh;
+    background-image: url("../img/background.png");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.landing .text h3 {
+    margin: auto;
+    width: 80%;
+    line-height: 1.7;
+}
