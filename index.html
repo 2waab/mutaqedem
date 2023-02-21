@@ -6,20 +6,46 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
         <title>you map</title>
     </head>
     <body>
-        <header class="p-3 bg-white shadow fixed-top">
+        <nav class="navbar navbar-expand-lg bg-white fixed-top shadow-sm">
             <div class="container">
-                <a href="index.html"><img src="img/logo.svg" alt="you map logo" /></a>
+                <a class="navbar-brand fw-bold fs-3" href="index.html">you map</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium active" aria-current="page" href="#">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium" href="#">الإستخدام</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium" href="#">المطورون</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </header>
+        </nav>
+        <!-- Start Landing -->
         <div class="landing">
-            <div class="text text-center">
-                <h3 class="my-5">أرسم خطتك و تابع تقدمك بدقة و شارك خطتك مع الاصدقاء و الأخرين</h3>
-                <a href="#" class="btn btn-primary">إبدأ الأن</a>
+            <div class="container">
+                <div class="text">
+                    <i class='bx bxs-check-circle text-primary mb-5'></i>
+                    <h1>تابع تعليمك الذاتي و أنت مرتاح</h1>
+                    <p class="text-muted">تقوم هذه المنصة بمساعدتك ببناء خريطة تعليمية متكاملة و متابعتها و التعديل عليها مع إمكانية مشاركتها</p>
+                    <a href="#" class="btn btn-primary">البدأ بالإستخدام</a>
+                </div>
             </div>
         </div>
+        <!-- End Landing -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
         <script src="js/main.js"></script>
     </body>
