@@ -1,28 +1,43 @@
 * {
-    font-family: "Cairo", sans-serif;
+    font-family: 'Baloo Bhaijaan 2', cursive;
 }
-header {
-    min-height: 50px;
+/* Start Nav */
+.navbar {
+    min-height: 67px;
 }
-header .container {
-    display: flex;
+.navbar .navbar-collapse {
     align-items: center;
-    justify-content: center;
 }
-header img {
-    width: 150px;
+.navbar .navbar-collapse ul li a {
+    font-size: 20px;
+    padding-left: 10px !important;
+    padding-right: 15px !important;
 }
+/* End Nav */
+/* Start Landing */
 .landing {
-    min-height: 100vh;
     background-image: url("../img/background.png");
-    background-size: cover;
-    background-position: center center;
+}
+.landing .container {
+    margin-top: 67px;
+    min-height: calc(100vh - 67px);
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.landing .text h3 {
-    margin: auto;
-    width: 80%;
-    line-height: 1.7;
+.landing .container .text {
+    text-align: center;
 }
+.landing .text i {
+    font-size: 80px;
+}
+.landing .text h1 {
+    color: #000;
+}
+.landing .text p {
+    margin: 20px auto;
+    font-size: 18px;
+    width: 80%;
+    line-height: 1.8;
+}
+/* End Landing */
