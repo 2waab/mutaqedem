@@ -52,30 +52,33 @@
 }
 .how .box {
     position: relative;
-    margin-bottom: 50px;
+    cursor: pointer;
+    overflow: hidden;
 }
-.how .box span {
-    position: absolute;
-    font-size: 130px;
-    top: -80px;
-    left: 10px;
-    z-index: 0;
-    font-weight: bold;
+.how .box .num {
+    font-size: 30px;
+    font-weight: 500;
+    width: 40px;
+    height: 40px;
+    margin: 30px auto;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
 }
 .how .box .text {
     position: relative;
     text-align: center;
     font-size: 22px;
     color: #000;
+    transition: 0.5s;
 }
-@media (max-width: 767px) {
-    .how .box span {
-        font-size: 50px;
-        top: -50px;
-        left: 0;
-    }
-    .how .box .text {
-        text-align: left;
-    }
+.how .box:hover .num {
+    box-shadow: 0 0px 0px 201px #0d6efd;
+}
+.how .box:hover .text {
+    color: #fff !important;
 }
 /* End How */
