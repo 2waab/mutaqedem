@@ -1,6 +1,19 @@
 * {
     font-family: 'Cairo', sans-serif;
 }
+.min-heading {
+    position: relative;
+}
+.min-heading::after {
+    position: absolute;
+    width: fit-content;
+    color: #0d6efd;
+    opacity: 0.1;
+    font-size: 60px;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 /* Start Nav */
 .navbar {
     min-height: 70px;
@@ -50,6 +63,9 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 10px;
 }
+.how .min-heading::after {
+    content: "كيف تستخدم المنصة";
+}
 .how .box {
     position: relative;
     cursor: pointer;
@@ -82,3 +98,28 @@
     color: #fff !important;
 }
 /* End How */
+/* Start Developer */
+.developer .text p {
+    font-size: 20px;
+    line-height: 1.8;
+}
+.developer .min-heading::after {
+    content: "المطور";
+}
+.developer .text .write span {
+    display: block;
+    font-size: 22px;
+    color: #000;
+    font-weight: 500;
+}
+.developer .text .write a {
+    display: block;
+    font-size: 22px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.developer .text .write a:hover {
+    color: #0d6efd !important;
+}
+/* End Developer */
