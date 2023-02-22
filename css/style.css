@@ -1,9 +1,9 @@
 * {
-    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-family: 'Cairo', sans-serif;
 }
 /* Start Nav */
 .navbar {
-    min-height: 67px;
+    min-height: 70px;
 }
 .navbar .navbar-collapse {
     align-items: center;
@@ -13,14 +13,17 @@
     padding-left: 10px !important;
     padding-right: 15px !important;
 }
+.navbar button {
+    box-shadow: 0 0 0 #000 !important;
+}
 /* End Nav */
 /* Start Landing */
 .landing {
     background-image: url("../img/background.png");
 }
 .landing .container {
-    margin-top: 67px;
-    min-height: calc(100vh - 67px);
+    margin-top: 70px;
+    min-height: calc(100vh - 70px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,3 +44,38 @@
     line-height: 1.8;
 }
 /* End Landing */
+/* Start How */
+.how .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+}
+.how .box {
+    position: relative;
+    margin-bottom: 50px;
+}
+.how .box span {
+    position: absolute;
+    font-size: 130px;
+    top: -80px;
+    left: 10px;
+    z-index: 0;
+    font-weight: bold;
+}
+.how .box .text {
+    position: relative;
+    text-align: center;
+    font-size: 22px;
+    color: #000;
+}
+@media (max-width: 767px) {
+    .how .box span {
+        font-size: 50px;
+        top: -50px;
+        left: 0;
+    }
+    .how .box .text {
+        text-align: left;
+    }
+}
+/* End How */
