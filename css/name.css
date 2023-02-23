@@ -27,8 +27,13 @@
 .form .container input {
     text-align: right;
 }
-.form .container a {
+.form .btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.form a {
     display: block;
-    width: 100%;
+    width: 45%;
 }
 /* End Form */
