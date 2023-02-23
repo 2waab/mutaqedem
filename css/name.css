@@ -1,0 +1,34 @@
+* {
+    font-family: 'Cairo', sans-serif;
+}
+/* Start Nav */
+.navbar {
+    min-height: 70px;
+}
+.navbar .navbar-collapse {
+    align-items: center;
+}
+.navbar .navbar-collapse ul li a {
+    font-size: 20px;
+    padding-left: 10px !important;
+    padding-right: 15px !important;
+}
+.navbar button {
+    box-shadow: 0 0 0 #000 !important;
+}
+/* End Nav */
+/* Start Form */
+.form {
+    margin-top: 70px;
+}
+.form .container {
+    text-align: right;
+}
+.form .container input {
+    text-align: right;
+}
+.form .container a {
+    display: block;
+    width: 100%;
+}
+/* End Form */
