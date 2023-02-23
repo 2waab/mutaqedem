@@ -6,13 +6,14 @@
 }
 .min-heading::after {
     position: absolute;
-    width: fit-content;
+    width: 100%;
     color: #0d6efd;
     opacity: 0.1;
     font-size: 60px;
     top: -10px;
     left: 50%;
     transform: translateX(-50%);
+    padding: 0 5px;
 }
 /* Start Nav */
 .navbar {
@@ -60,7 +61,7 @@
 /* Start How */
 .how .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 10px;
 }
 .how .min-heading::after {
@@ -92,10 +93,15 @@
     transition: 0.5s;
 }
 .how .box:hover .num {
-    box-shadow: 0 0px 0px 201px #0d6efd;
+    box-shadow: 0 0px 0px 250px #0d6efd;
 }
 .how .box:hover .text {
     color: #fff !important;
+}
+@media (max-width: 767px) {
+    .how .min-heading::after {
+        font-size: 40px;
+    }
 }
 /* End How */
 /* Start Developer */
