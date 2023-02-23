@@ -1,6 +1,7 @@
 let User = {
     name: "",
     map: "",
+    mapAway,
 };
 
 let userName = document.querySelector("#user-name");
@@ -9,7 +10,7 @@ let btn = document.querySelector("#btn");
 let popup = document.querySelector("#btn-popup");
 
 btn.onclick = () => {
-    if (userName.value === "" && mapName.value === "") {
+    if (userName.value === "" || mapName.value === "") {
         popup.click();
     } else {
         User.name = userName.value;
