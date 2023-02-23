@@ -93,6 +93,8 @@
     transition: 0.5s;
 }
 .how .box:hover .num {
+    color: #0d6efd !important;
+    background-color: #fff !important;
     box-shadow: 0 0px 0px 250px #0d6efd;
 }
 .how .box:hover .text {
