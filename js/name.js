@@ -15,5 +15,6 @@ btn.onclick = () => {
         User.name = userName.value;
         User.map = mapName.value;
         window.localStorage.setItem("userInfo", JSON.stringify(User));
+        btn.href = "mapaway.html";
     };
 };
