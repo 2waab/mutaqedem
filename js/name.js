@@ -15,6 +15,7 @@ btn.onclick = () => {
     } else {
         User.name = userName.value;
         User.map = mapName.value;
+        console.log(User);
         window.localStorage.setItem("userInfo", JSON.stringify(User));
     };
 };
