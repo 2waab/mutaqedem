@@ -48,11 +48,21 @@ next.addEventListener("click", () => {
             let nums = Array.from(document.querySelectorAll(".box .number-of-line"));
             for (let i = 0; i < lineObject.length; i++) {
                 if (lineObject[i].id == titles[i].id) {
-                    lineObject[i].title = titles[i].value;
+                    if (titles[i].value == "") {
+                        document.querySelector(".modal-body").textContent = "يبدو أن هناك حقلا فارغا";
+                        popup.click();
+                    } else {
+                        lineObject[i].title = titles[i].value;
+                    };
                 };
                 if (lineObject[i].id == nums[i].id) {
-                    lineObject[i].num = nums[i].value;
-                }
+                    if (nums[i].value == "") {
+                        document.querySelector(".modal-body").textContent = "يبدو أن هناك حقلا فارغا";
+                        popup.click();
+                    } else {
+                        lineObject[i].num = nums[i].value;
+                    };
+                };
             };
             user.mapAway = lineObject;
             window.localStorage.setItem("userInfo", JSON.stringify(user));
