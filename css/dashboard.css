@@ -1,0 +1,61 @@
+* {
+    font-family: 'Cairo', sans-serif;
+}
+/* Start Nav */
+.navbar {
+    min-height: 70px;
+}
+.navbar .navbar-collapse {
+    align-items: center;
+}
+.navbar .navbar-collapse ul li a {
+    font-size: 20px;
+    padding-left: 10px !important;
+    padding-right: 15px !important;
+}
+.navbar button {
+    box-shadow: 0 0 0 #000 !important;
+}
+/* End Nav */
+/* Start User Informaiton */
+.user-info .container {
+    margin-top: 90px;
+}
+.user-info .image {
+    background-image: linear-gradient(to top, #373B44, #4286f4);
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.user-info .image.fe {
+    background-image: linear-gradient(to top, #800080, #ffc0cb);
+}
+.user-info .image img {
+    width: 1000px;
+}
+.user-info .text {
+    text-align: right;
+}
+.user-info .text h4 {
+    font-size: 20px;
+}
+.user-info .text p {
+    margin: 0;
+}
+.user-info .progress {
+    width: 100%;
+    border-radius: 99999px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+}
+.user-info .progress span {
+    width: 60%;
+    height: 100%;
+}
+/* End User Informaiton */

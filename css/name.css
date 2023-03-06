@@ -1,0 +1,75 @@
+* {
+    font-family: 'Cairo', sans-serif;
+}
+/* Start Nav */
+.navbar {
+    min-height: 70px;
+}
+.navbar .navbar-collapse {
+    align-items: center;
+}
+.navbar .navbar-collapse ul li a {
+    font-size: 20px;
+    padding-left: 10px !important;
+    padding-right: 15px !important;
+}
+.navbar button {
+    box-shadow: 0 0 0 #000 !important;
+}
+/* End Nav */
+/* Start gender */
+.gender .box {
+    width: 45%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #fff;
+}
+.gender .box img {
+    width: 300px;
+}
+.gender .box p {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+.gender .box .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+}
+.gender .box .overlay i {
+    font-size: 50px;
+    position: relative;
+    z-index: 10000;
+}
+.gender .box.active .overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+/* End gender */
+/* Start Form */
+.form {
+    margin-top: 70px;
+}
+.form .container {
+    text-align: right;
+}
+.form .container input {
+    text-align: right;
+}
+.btns .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btns a {
+    width: 45%;
+}
+/* End Form */
